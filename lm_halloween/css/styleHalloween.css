@@ -1,0 +1,91 @@
+/**principal*/
+body {
+    background-color: black;
+}
+
+#container {
+    background-image: url('../img/wallpaper1.jpg');
+    background-size: cover;
+    position:absolute;
+    width: 99%;
+    height: 98%;
+}
+
+@font-face {
+    font-family: halloween;
+    src: url('../fuente/Halloween\ Morning.ttf');
+}
+
+/**cuadrados*/
+.cuadrado {
+    height: 0;
+    position: relative;
+    background: none;
+    cursor: pointer;
+}
+
+div.casa {
+    width: 18%;
+    padding-top: 10%;
+    margin-left: 63%;
+    margin-top: -2%;
+}
+
+div.tumba {
+    width:15%;
+    padding-top:8%;
+    margin-top: -2%;
+    margin-left: 20%;
+}
+
+div.luna {
+    width: 12%;
+    padding-top: 10%;
+    margin-top: -2%;
+    margin-left: 17%;
+}
+
+div.murcielagos {
+    width: 25%;
+    padding-top: 15%;
+    margin-top: 2%;
+    margin-left: 50%;
+}
+
+/**textos*/
+h2 {
+    font-size: 200%;
+    font-family: halloween;
+    color: white;
+}
+
+h2.tumba {
+    margin-left: 15%;
+}
+
+h2.casa {
+    margin-top: 23%;
+    margin-left: 82%;
+}
+
+h2.luna {
+    margin-top: -40%;
+    margin-left: 5%;
+}
+
+h2.murcielagos {
+    margin-top: -15%;
+    margin-left: 50%;
+}
+
+/**img*/
+img.murcielagos {
+    margin-left: 50%;
+    margin-top: -20%;
+    visibility: hidden;
+}
+
+/**sonido*/
+.audio {
+    display: none;
+}

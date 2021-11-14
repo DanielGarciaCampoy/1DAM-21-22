@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween</title>
+    <link rel="stylesheet" href="css/styleHalloween.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<script>
+    //tumba
+    function susto() {
+        alert('¿Estas seguro?')
+        location.href='susto.html'
+    }
+
+    //murcielagos
+    function showImage(id) {
+        var img = document.getElementById(id);
+        img.style.visibility = 'visible';
+    }
+    function sonidoMurcielagos() {
+        var murcielagoSonido = document.getElementById("murcielagoSonido");
+        murcielagoSonido.play();
+    }
+    function thriller() {
+        var thriller = document.getElementById("thriller");
+        thriller.play();
+    }
+
+</script>
+<body>
+
+    <div id="container">
+
+        <!--casa-->
+        <h2 class="casa">Vuelve a casa!</h2>
+        <div class="cuadrado casa" onclick="location.href='index.html'"></div>
+
+        <!--tumba FALTA EL SUSTO-->
+        <div class="cuadrado tumba" onclick="susto()"></div>
+        <h2 class="tumba">NO TOQUES LA TUMBA</h2>
+
+        <!--luna FALTA MUSICA Y GIF-->
+        <h2 class="luna">MIRA A LA LUNA</h2>
+        <div class="cuadrado luna" onclick="thriller()"></div>
+        <audio class="audio" id="thriller">
+            <source type="audio/mp3" src="sonido/thriller.mp3">
+        </audio>
+
+        <!--murcielagos FALTA SONIDO-->
+        <h2 class="murcielagos">NO MOLESTES A LOS MURCIELAGOS</h2>
+        <img id="murcielagos" class="murcielagos" src="img/murcielagos.gif">s
+        <div class="cuadrado murcielagos" onclick="showImage('murcielagos'); sonidoMurcielagos() "></div>
+        <audio class="audio" id="murcielagoSonido">
+            <source type="audio/mp3" src="sonido/murcielagos.mp3">
+        </audio>            
+
+    </div>
+    
+</body>
+</html>
