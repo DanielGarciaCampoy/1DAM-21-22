@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabajo_bootstrap5</title>
+    <!--bootstrap5 css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--css propio-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="bg-dark"> <!--todo el fondo negro-->
+        <div class="container-lg text-light"> <!--container principal-->
+
+            <!--inicio navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="images/favicon.png" width="50"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Introduction</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#tipos">Types of monitors</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#history">History</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#characteristics">Characteristics</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#recomendaciones">Recomendations</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contactanos">Contact us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Coming soon...</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            <!--fin navbar-->
+
+            <!--inicio hero section(carousel)-->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/portada.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block p-3 mb-2 bg-danger rounded-pill" id="titulo">
+                    <h5><b>Welcome to my page!</b></h5>
+                    <p>What will you learn here:</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/portada2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block p-3 mb-2 bg-danger rounded-pill" id="titulo">
+                    <h5><b>What a monitor is...</b></h5>
+                    <p>...and their components and history</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/portada3.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block p-3 mb-2 bg-danger rounded-pill" id="titulo">
+                    <h5><b>Recomendations</b></h5>
+                    <p>What and where to buy, according to your interests</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!--fin hero section-->
+
+            <div class="progress"> <!--separador progress bar-->
+              <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <!--inicio introduction-->
+            <div class="ms-5 me-5 mt-3" id="introduction">
+              <h1><b>Introduction</b></h1>
+              <h5 class="justify">
+                &nbsp;A monitor is a computer screen, probably the most important computer device, because it is the main interface output device which shows data to the user.
+                It can also be output/input if it's touchscreen.
+              </h5>
+            </div>
+            <!--fin introduccion-->
+
+            <!--inicio tipos de monitores (cards)-->
+            <div class="ms-5 me-5 mt-5 mb-5" id="tipos">
+              <h1 class="mb-4"><b>Types of monitors</b></h1>
+              <!--cards-->
+              <div class="card-group text-dark center">
+                <div class="card">
+                  <img src="images/monitorLCD.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">LCD</h5>
+                    <p><a class="btn btn-primary mt-1" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Learn more...</a></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/3ero.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">CRT</h5>
+                    <p><a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Learn more...</a></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/download.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">LED</h5>
+                    <p><a class="btn btn-primary mt-5" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Learn more...</a></p>
+                  </div>
+                </div>
+              </div>
+              <!--collapse-->
+              <div class="row text-dark justify">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                      <p><b>LCD (liquid-crystal display))</b> is a flat screen made by a number of color or monochromes pixels located in front of a light source or reflector</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                      <p>
+                        <b>A cathode-ray tube (CRT)</b> is a technology that enables watching images thorugh a beam of cathodic lights that's constantly directed against a glass screen covered with phosphorus and lead.
+                        It's very old-fashioned.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample3">
+                    <div class="card card-body">
+                      <p><b>LED (light-emitting diode)</b> monitors are characterized for being composed by LEDs. LEDs screens biggest advantage is having no size limit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--fin tipos de monitores (cards)-->
+
+            <div class="progress"> <!--separador progress bar-->
+              <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <!--inicio historia (usar tooltips)-->
+            <div id="history" class="ms-5 me-5 mt-3 mb-4 justify">
+              <h1 class="mb-3"><b>History</b></h1>
+              <h5>&nbsp;The history of monitors is usually organized in 4 main generations:</h5>
+              <div class="row mt-4 ms-3" id="gen">
+                <div class="col">
+                  <a data-toggle="tooltip" title="First digital computer, 1937-1942"> <img src="images/1ero.jpg" alt=""></a> <!--tooltip-->
+                </div>
+                <div class="col">
+                  <h3>1st generation</h3>
+                  <p>
+                    In the first computers, people communicated with them through little lights, which would turn on or off according to the memory positions the computer
+                    is accessing or the insructions the computer is running.
+                  </p>
+                </div>
+              </div>
+              <div class="row mt-4 ms-3" id="gen">
+                <div class="col">
+                  <h3>2nd generation</h3>
+                  <p>
+                    During the 50's, the most common way to interact with a computer is through a teletype, which connected directly to the computer and printed all
+                    the data from a computing sesion.
+                  </p>
+                </div>
+                <div class="col">
+                  <a data-toggle="tooltip" title="A teletype Model 33"> <img src="images/2ndo.jpg" alt=""></a> <!--tooltip-->
+                </div>
+              </div>
+              <div class="row mt-4 ms-3" id="gen">
+                <div class="col">
+                  <a data-toggle="tooltip" title="A Philips CRT monitor"> <img src="images/3ero.jpg" alt=""></a> <!--tooltip-->
+                </div>
+                <div class="col">
+                  <h3>3rd generation</h3>
+                  <p>
+                    In the 70's, CRT monitors started, it's designed to mainly display text and supported underline, bold font, italics, among others...
+                    A bit later CGA monitors came out, which were comercialized in 1981 along with the development of the first graphic card.
+                  </p>
+                </div>
+              </div>
+              <div class="row mt-4 ms-3" id="gen">
+                <div class="col">
+                  <h3>4º generation</h3>
+                  <p>
+                    In 1987 started the VGA monitors, which were the standar for a very long time, 2 years later from their creation it was improved to
+                    correct some problems it had, naming it SVGA (Super VGA), it aumented colors and resolutions.
+                  </p>
+                </div>
+                <div class="col">
+                  <a data-toggle="tooltip" title="A LG LCD monitor"> <img src="images/monitorLCD.jpg" alt=""></a> <!--tooltip-->
+                </div>
+              </div>
+            </div>
+            <!--fin historia-->
+
+            <div class="progress"> <!--separador progress bar-->
+              <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            
+            <!--inicio caracteristicas (acordeon)-->
+            <div id="characteristics" class="ms-5 me-5 mt-3 mb-4">
+
+              <h1 class="mb-4"><b>Characteristics</b></h1>
+              <h5 class="mb-4">&nbsp;In a PC monitor there are the following characteristics:</h5>
+
+              <!--acordeon-->
+              <div class="accordion text-dark justify" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                      Format
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <p>There are 2 main monitors formats nowadays:</p>
+                        <div class="row">
+                          <div class="col">
+                            <p><br><b>-4:3 Monitos:</b> "square" shaped, it's in desuse currently</p>
+                            <a data-toggle="tooltip" title="4:3 LCD monitor"><img src="images/monitorLCD.jpg" alt=""></a><!--tooltip img-->
+                          </div>
+                          <div class="col">
+                            <p><br><b>-16:9 Monitos:</b> "horizontal" shaped, it's the standar currently</p>
+                            <a data-toggle="tooltip" title="16:9 IPS monitor"><img src="images/ips.jpg" alt=""></a><!--tooltip img-->
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Sizes
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      <p>&nbsp;Monitos sizes are very varied, although nowadays monitors <b>for PC usually are around 20 and 30 inches</b> and <b>around 13 and 17 for laptops</b> </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      Viewing angles
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <p>
+                        The <b>Viewing angle</b> is the capacity a monitor has to be viewed correctly standing at its sides, so if you see a monitor that has bad viewing angles at its sides it would be darker 
+                        than one with good viewing angles
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-heading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false" aria-controls="panelsStayOpen-collapse4">
+                      Luminance
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <p><b>Luminance</b> is the maximum bright a screen is able to show and its measured in <b>lux.</b></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-heading5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false" aria-controls="panelsStayOpen-collapse5">
+                      Response time
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading5">
+                    <div class="accordion-body">
+                      <p><b>Response time </b> is the time that the screen takes to show the changes made in the image, and it's measured in <b>ms (miliseconds)</b> and nowadays there is from 1 to 9ms, being the least the best</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-heading6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false" aria-controls="panelsStayOpen-collapse6">
+                      Consumption
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading6">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>It's the level of energetic efficiency of the screen and it's measured with the following graphic:</p>
+                        </div>
+                        <div class="col">
+                          <img src="images/Etiquetado-energetico.webp" width="300">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!--fin caracteristicas (acordeon)-->
+            
+            <div class="progress"> <!--separador progress bar-->
+              <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <!--inicio recomendaciones (usar modal)-->
+            <div id="recomendaciones" class="ms-5">
+
+              <h1 class="mt-3 mb-3"><b>Recomendations</b></h1>
+              <h5>&nbsp;After learning about it's characteristics, in this section you will learn what type to monitor to buy according to the characteristics you want:</h5>
+              <h3 class="mb-3 mt-3"><b>Type of panel</b></h3>
+              <h5>&nbsp;Commercially, monitos are distinguished by these 3 types of panels:</h5>
+              <!--cards-->
+              <div class="card-group text-dark justify mb-4">
+                <div class="card">
+                  <img src="images/ips.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title mb-1 center"><b>IPS</b></h5>
+                    <p>It's the best type of panel because offers the best colors, however they are the most expensive and usually have high latency and low refresh rate.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/monitorLCD.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title mb-1 center"><b>TN</b></h5>
+                    <p>It's the cheapest and offers the worst color quality of the 3, however it has the lowest latency and higher refresh rate usually.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/va.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title center"><b>VA</b></h5>
+                    <p>It's in an intermediate point between the other 2</p>
+                  </div>
+                </div>
+              </div>
+              <!--fin cards-->
+              <div class="mb-4">
+                <h3><b>Refresh rate</b></h3>
+                <h5>&nbsp;For a common use, 60hz is enough, but for gaming it's recommendable 120 or 144hz sometimes, more than that is unnecesary</h5>
+              </div>
+
+              <div class="mb-4">
+                <h3><b>Size and format</b></h3>
+                <h5>
+                  &nbsp;The only recommendable format nowadays is 16:9, because 4:3 is obsolte and wider monitors are way too expensive.
+                  <br>The most common sizes are 24 and 27 inches.
+                </h5>
+              </div>
+              <div class="mb-4">
+                <h3><b>Recommended sites</b></h3>
+                <h5>&nbsp;The most recommended sites to buy monitors are:</h5>
+                <div class="row center">
+                  <div class="col mt-5">
+                    <img src="images/PcComponentes.png" width="200" class="mb-5">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      Enter PcComponentes.com!
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade text-dark" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">PcComponentes</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Are you sure you want to exit and enter PcComponentes?</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                            <button type="button" class="btn btn-danger"><a href="https://www.pccomponentes.com/">Yes</a></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--fin modal-->
+                  </div>
+                  <div class="col">
+                    <img src="images/amazon.png" width="200" class="mt-4 mb-4 ms-1">
+                    <!--button modal-->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                      Enter Amazon.es!
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade text-dark" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabe2" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Amazon</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Are you sure you want to exit and enter Amazon?</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                            <button type="button" class="btn btn-danger"><a href="https://www.amazon.es/">Yes</a></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--fin modal-->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!--fin recomendaciones-->
+            
+            <div class="progress"> <!--separador progress bar-->
+              <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <!--contactanos y google maps embebido-->
+            <div id="contactanos" class="ms-5">
+              <h1 class="mb-4 mt-3"><b>Contact us</b></h1>
+              <h5>&nbsp;You can contact us with the social media at the bottom of the page or with the following email:</h5>
+              <h5><i>iescampanillas@gmail.com</i></h5>
+              <h2 class="mt-5">Where are we?</h2>
+              <h5>&nbsp;We are in IES Campanillas a school from Campanillas, Málaga:</h5>
+              <!--google maps-->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6395.661487451892!2d-4.5551754!3d36.726626!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f06c7fbfd707%3A0x77fb6b02c457774c!2sIES%20Campanillas!5e0!3m2!1ses!2ses!4v1644779974950!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              <h2 class="mt-5">Informative video</h2>
+              <!--youtube-->
+              <iframe class="mb-5" width="759" height="427" src="https://www.youtube.com/embed/ucPDkoZM4Rc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!--inicio footer-->
+            <div class="progress"> <!--separador-->
+                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <footer id="footer" class="row align-items-start text-center">
+                <div class="col mt-5">
+                    <p><b>¡Thank you for reading!</b></p>
+                    <p class="text-secondary">IES Campanillas™ <br>All rights reserved</p>
+                </div>
+                <div class="col mt-5">
+                  <p><b>Made by:</b></p>
+                  <p class="text-secondary">Daniel García Campoy</p>
+                </div>
+                <div class="col mt-5">
+                    <p>
+                        <b class="text-left">Social media</b>
+                        <br>⌨️<a href="https://github.com/">GitHub</a>
+                        <br>🕊️<a href="https://twitter.com/">Twitter</a>
+                        <br>📽️<a href="https://www.youtube.com/">Youtube</a> 
+                    </p>
+                </div>
+            </footer>
+            <!--fin footer-->
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
